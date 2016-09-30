@@ -1,0 +1,41 @@
+div.tiny-date-picker {
+  max-width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 3px;
+  color: black;
+  overflow: hidden;
+}
+
+span.tdp-clickable {
+  cursor: pointer;
+}
+
+div.tiny-date-picker > div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+div.tiny-date-picker > .tdp-year-container { background-color: #ccc; }
+div.tiny-date-picker > .tdp-month-container { background-color: #ddd; }
+
+div.tiny-date-picker > .tdp-year-container span,
+div.tiny-date-picker > .tdp-month-container span{
+  flex-basis: 33.3% !important;
+}
+
+div.tiny-date-picker span.day-label {
+  flex-basis: 14.08% !important;
+  line-height: 30px;
+  border-radius: 3px;
+}
+
+div.tiny-date-picker .tdp-day-container  span.day-label {
+}
+
+div.tiny-date-picker .tdp-day-container  span.day-label.selected {
+  background-color: #dadada;
+}
